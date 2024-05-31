@@ -39,6 +39,9 @@ body{
     margin-bottom: 20px;
 }
 
+.intro{
+    border-bottom: 1.5px solid #47516B;
+}
 
 .name{
     font-size: 2rem;
@@ -74,11 +77,8 @@ body{
     display:block;
 }
 
-
-hr{
-    border: 1px solid #47516B;
-    width:100%;
-    margin-top:10px;
+.languages, .socials {
+    border-top : 1.5px solid #47516B;
 }
 
 
