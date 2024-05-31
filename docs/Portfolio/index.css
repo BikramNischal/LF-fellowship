@@ -417,7 +417,7 @@ section > .small-sub-font {
 }
 
 .tools-container .mini-card{
-    /* width: 30%; */
+    width: 30%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -491,7 +491,8 @@ p .small-sub-font{
     }
 
     .tools-container .mini-card{
-        max-width:25%;
+        width:auto;
+        max-width: 40%;
     }
 }
 
