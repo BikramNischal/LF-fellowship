@@ -379,6 +379,10 @@ section > .small-sub-font {
     padding: 16px 24px;
 }
 
+.mini-card ul{
+    padding: 0 20px
+}
+
 .design-color{
     color:#9251F7;
 }
@@ -486,15 +490,6 @@ p .small-sub-font{
         min-width:250px;
     }
 
-    .education-list{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .education-list .small-card{
-        width:30%;
-    }
-
     .tools-container .mini-card{
         max-width:25%;
     }
@@ -504,6 +499,15 @@ p .small-sub-font{
     .exp-list{
         flex-direction: row;
         align-items: center;
+    }
+
+    .education-list{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .education-list .small-card{
+        width:30%;
     }
 }
 
