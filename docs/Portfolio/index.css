@@ -78,6 +78,7 @@ body{
 }
 
 .languages, .socials {
+    margin-top : 10px;
     border-top : 1.5px solid #47516B;
 }
 
@@ -193,6 +194,12 @@ section > .small-sub-font {
     display:flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.project-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .card{
@@ -502,6 +509,7 @@ p .small-sub-font{
         align-items: center;
     }
 
+
     .education-list{
         flex-direction: row;
         justify-content: space-evenly;
@@ -509,6 +517,10 @@ p .small-sub-font{
 
     .education-list .small-card{
         width:30%;
+    }
+
+    .project-list{
+        flex-direction: row;
     }
 }
 
