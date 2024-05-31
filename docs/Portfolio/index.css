@@ -39,6 +39,7 @@ body{
     margin-bottom: 20px;
 }
 
+
 .name{
     font-size: 2rem;
     font-weight: 500;
@@ -70,6 +71,14 @@ body{
 .author{
     display:block;
 }
+
+
+hr{
+    border: 1px solid #47516B;
+    width:100%;
+    margin-top:10px;
+}
+
 
 .left-flex-container{
     display:flex;
@@ -116,9 +125,9 @@ body{
 }
 
 section > .small-sub-font {
-    margin:24px 48px;
+    margin:0 48px;
     font-size: 12px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .small-sub-font{
@@ -259,7 +268,6 @@ section > .small-sub-font {
     justify-content: center;
     gap:12px;
     margin-bottom: 8px;
-    list-style: none;
 }
 
 .location{
@@ -444,7 +452,7 @@ p .small-sub-font{
 
 }
 
-@media screen and (min-width:576px){
+@media screen and (min-width:650px){
     body{
         flex-direction: row;
     }
@@ -462,15 +470,15 @@ p .small-sub-font{
     }
 
     .left-flex-container{
-        padding: 24px 48px;
+        padding: 10px 48px;
         justify-content: center;
     }
 
     .exp-list{
-        flex-direction: row;
+        /* flex-direction: row; */
         width: 100%;
         gap: 10px;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
     }
 
@@ -488,7 +496,14 @@ p .small-sub-font{
     }
 
     .tools-container .mini-card{
-        width:15%;
+        max-width:25%;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .exp-list{
+        flex-direction: row;
+        align-items: center;
     }
 }
 
