@@ -1,0 +1,133 @@
+:root{
+    --primary-gray: #47516B;
+    --secondary-gray:#79819A;
+    --icon-container-background: #E2E6EE;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    width:100%;
+}
+
+
+/* Profile image */
+.profile-img{
+    width:100%;
+}
+
+.profile-img__img{
+    width:100%;
+}
+
+/* Name, profession and quotation */
+.name-quote{
+    margin:20px 48px;
+}
+/* Name */
+.name__p{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Outfit", sans-serif;
+    line-height: 40px;
+    text-align: center;
+    color: #2E2E48;
+}
+
+/* profession gradient */
+.name__p--gradient{
+    font-size:1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    background: linear-gradient(to right, #A478E8,#516CF7);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+/* quotatoin block */
+.quote{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* quotation statement */
+.quote__p{
+    color:var(--primary-gray);
+}
+
+/* quotation author name */
+.quote__p--secondary{
+    font-size: 0.75rem;
+    font-family: inherit;
+    color:var(--secondary-gray);
+}
+
+
+/* container for elements like social media, contact and language */
+.left-card{
+    margin:0 48px;
+    padding: 32px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--secondary-gray); 
+    gap:24px;
+}
+
+/* individual item in card like email, instagram, phone, etc. */
+.left-card__item{
+    min-width: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display:flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* container for icons like mail icon, insta icon etc */
+.left-icon-container{
+    width:32px;
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--icon-container-background);
+}
+
+/* icons like mail icon, insta icon, phone icon */
+.left-icon-container__icon{
+    width: 20px;
+    height: 20px;
+}
+
+/* primary style for text in left-card items */
+.left-card__item--primary{
+    font-size:0.9rem;
+    line-height: 1.1rem;
+    text-decoration: none;
+    color : var(--primary-gray);
+}
+
+/* secondary style for text in left-card items */
+.left-card__item--secondary{
+    font-size:0.75rem;
+    line-height: 1rem;
+    color:var(--secondary-gray);
+}
+
+

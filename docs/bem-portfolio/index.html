@@ -12,8 +12,112 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1> 
+    <div class="left-container">
+        <!-- profile image -->
+        <figure class="profile-img">
+            <img class="profile-img__img" src="./public/profile-pic.svg" alt="profile picture">
+        </figure>
+
+        <!-- Name,contact, social media, languages  -->
+        <div class="about-container">
+
+            <!-- Name, profession and quote -->
+            <div class="name-quote">
+                <div class="name">
+                    <p class="name__p">
+                        Chiara Bianchi
+                    </p>
+                    <p class="name__p--gradient">
+                        Product Designer
+                    </p>
+                </div>
+                <div class="quote">
+                    <p class="quote__p">
+                        <sup>
+                            <img src="public/quoteup.svg" alt="quotation mark">
+                        </sup>
+                        Design isn’t finished until somebody is using it. 
+                        <sub>
+                            <img src="public/quotedown.svg" alt="quotation mark">
+                        </sub>
+                    </p>
+                    <p class="quote__p--secondary">
+                        Brenda Laurel
+                    </p>
+                </div>
+            </div> 
+
+            <!-- Contact details -->
+            <div class="contact left-card">
+
+                <!-- Contact Email -->
+                <div class="left-card__item">
+                    <div class="left-icon-container">
+                        <img src="public/mail.svg" alt="mail icon" class="left-icon-container__icon"> 
+                    </div> 
+                    <div>
+                        <p class="left-card__item--secondary">
+                            Email
+                        </p>
+                        <p class="left-card__item--primary">
+                            chiara.bianchi@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Website -->
+                <div class="left-card__item">
+                    <div class="left-icon-container">
+                        <img src="public/weblink.svg" alt="link icon" class="left-icon-container__icon"> 
+                    </div> 
+                    <div>
+                        <p class="left-card__item--secondary">
+                            Website
+                        </p>
+                        <a class="left-card__item--primary" href="https://aldesign.it/">
+                            https://aldesign.it
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Phone -->
+                <div class="left-card__item">
+                    <div class="left-icon-container">
+                        <img src="public/phone.svg" alt="phone icon" class="left-icon-container__icon"> 
+                    </div> 
+                    <div>
+                        <p class="left-card__item--secondary">
+                            Phone
+                        </p>
+                        <p class="left-card__item--primary">
+                            (+39) 333 0123 765
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Address -->
+                <div class="left-card__item">
+                    <div class="left-icon-container">
+                        <img src="public/location.svg" alt="location icon" class="left-icon-container__icon"> 
+                    </div> 
+                    <div>
+                        <p class="left-card__item--secondary">
+                            Address
+                        </p>
+                       <p class="left-card__item--primary">
+                            Bologna, Italy
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right-container">
+
+    </div>
 </body>
 </html>
