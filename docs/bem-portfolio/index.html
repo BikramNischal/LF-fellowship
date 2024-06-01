@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM-Portfolio</title>
-    <!-- font stylese and style sheet -->
+
+    <!-- font styles and style sheet -->
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- left handside container (profile section) -->
     <div class="left-container">
         <!-- profile image -->
         <figure class="profile-img">
@@ -75,7 +78,7 @@
                             <p class="left-card__item--secondary">
                                 Website
                             </p>
-                            <a class="left-card__item--primary" href="https://aldesign.it/">
+                            <a class="left-card__item--primary" href="https://aldesign.it/" target="_blank">
                                 https://aldesign.it
                             </a>
                         </div>
@@ -261,7 +264,395 @@
 
     </div>
 
-    <div class="right-container">
+    <!-- right handside container (experience, project and skills overview) -->
+    <div class="right-container timeline">
+
+        <!-- Project Section -->
+        <div class="project timeline-content">
+            <!-- Section Header -->
+            <h3 class="timeline-content__header">
+                Latest Project
+            </h3>
+            
+            <!-- List of projects -->
+            <div class="project-list">
+                <!-- Chakra UI Project -->
+                <div class="right-card">
+                    <!-- Wraps the project icon and project details -->
+                    <div class="right-card-content-wrapper">
+                        <figure class="right-card__img">
+                            <img src="./public/figma-logo.svg" alt="figma logo" class="project-icon">
+                        </figure>
+                        <div class="right-card-content">
+                            <p class="right-card-content__title">
+                                Powerful Design System
+                            </p>
+                            <p class="right-card-content__detail"> 
+                                Figma UI Kit and Design System targeting a wide variety of use cases.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- project link section -->
+                    <div class="right-card-link">
+                        <figure class="right-card-link__icon-container">
+                            <img src="./public/Figma.svg" alt="figma icon" class="right-card-link__icon">
+                        </figure>
+                        <a href="https://www.figma.com/@angelolibero" class="right-card-link__project-link">
+                            https//figma.com
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="right-card">
+                    <!-- Wraps the project icon and project details -->
+                    <div class="right-card-content-wrapper">
+                        <figure class="right-card__img">
+                            <img src="./public/chakra-ui.svg" alt="Chakra UI logo" class="project-icon">
+                        </figure>
+                        <div class="right-card-content">
+                            <p class="right-card-content__title">
+                                Modern Website
+                            </p>
+                            <p class="right-card-content__detail"> 
+                                Powerful website + dashboard template for your next Chakra UI project.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- project link section -->
+                    <div class="right-card-link">
+                        <figure class="right-card-link__icon-container">
+                            <img src="./public/project-link.svg" alt="link icon" class="right-card-link__icon">
+                        </figure>
+                        <a href="https://ui-8.net/" class="right-card-link__project-link">
+                            https://ui-8.net
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience timeline-content">
+            <!-- Section header -->
+            <h3 class="timeline-content__header">
+                Experience
+            </h3>
+
+            <!-- Experience timeline container -->
+            <div class="experience-timeline"> 
+                <!-- Experience timeline entry Apple -->
+                <div class="experience-timeline-content">
+                    <!-- job description with comany name, location, position, duration-->
+                    <div class="job-detail">
+                        <div class="duration-company">
+                            <!-- job time period and location -->
+                            <div class="duration-location">
+                                <p class="job-duration">
+                                    Jul 20 - Jan 2022
+                                </p>
+                                <div class="icon-location">
+                                    <figure class="job-location-icon-container">
+                                        <img src="./public/location.svg" alt="location icon" class="job-location-icon-container__icon">
+                                    </figure>
+                                    <p class="job-location">
+                                        Cupertino
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- compnay name, icon and position -->
+                            <div class="company">
+                                <figure class="company-icon-container">
+                                    <img src="./public/apple.svg" alt="" class="company__icon">
+                                </figure>
+                                <div class="job-title-company-name">
+                                    <p class="company__job-title">
+                                        Product designer
+                                    </p>
+                                    <p class="company__name">
+                                        Apple
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job description -->
+                        <p class="job-description">
+                            Omnis minima inventore minus. Aut et incidunt. Aut fugiat culpa illum optio dolorum aut maxime ipsa. Laborum incidunt enim consectetur perspiciatis. Dolore ullam dolor impedit dolorum recusandae facilis quo et. Et ipsam vel sunt qui ut officia voluptatem.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <!-- Experience timeline entry Tesla -->
+                <div class="experience-timeline-content">
+                    <!-- job description with comany name, location, position, duration-->
+                    <div class="job-detail">
+                        <div class="duration-company">
+                            <!-- job time period and location -->
+                            <div class="duration-location">
+                                <p class="job-duration">
+                                    Oct 2015 - Mar 2020
+                                </p>
+                                <div class="icon-location">
+                                    <figure class="job-location-icon-container">
+                                        <img src="./public/location.svg" alt="location icon" class="job-location-icon-container__icon">
+                                    </figure>
+                                    <p class="job-location">
+                                        Austin
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- compnay name, icon and position -->
+                            <div class="company">
+                                <figure class="company-icon-container">
+                                    <img src="./public/tesla.svg" alt="" class="company__icon">
+                                </figure>
+                                <div class="job-title-company-name">
+                                    <p class="company__job-title">
+                                        UX designer
+                                    </p>
+                                    <p class="company__name">
+                                        Tesla
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job description -->
+                        <p class="job-description">
+                            Commodi atque sit ut qui assumenda earum aperiam occaecati voluptates. Fuga quas aut soluta nostrum et beatae. Maiores repudiandae quibusdam autem enim ut in possimus ad.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <!-- Experience timeline entry Google -->
+                <div class="experience-timeline-content">
+                    <!-- job description with comany name, location, position, duration-->
+                    <div class="job-detail">
+                        <div class="duration-company">
+                            <!-- job time period and location -->
+                            <div class="duration-location">
+                                <p class="job-duration">
+                                    Sep 2014 - Aug 2015
+                                </p>
+                                <div class="icon-location">
+                                    <figure class="job-location-icon-container">
+                                        <img src="./public/location.svg" alt="location icon" class="job-location-icon-container__icon">
+                                    </figure>
+                                    <p class="job-location">
+                                        Mountain View
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- compnay name, icon and position -->
+                            <div class="company">
+                                <figure class="company-icon-container">
+                                    <img src="./public/google.svg" alt="" class="company__icon">
+                                </figure>
+                                <div class="job-title-company-name">
+                                    <p class="company__job-title">
+                                        Design system architect
+                                    </p>
+                                    <p class="company__name">
+                                        Google
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job description -->
+                        <p class="job-description">
+                            Ut molestias animi. Neque voluptate velit corporis adipisci voluptate et qui sed neque. Inventore eos non. Qui eveniet quo incidunt nemo.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <!-- Experience timeline entry Vectornator -->
+                <div class="experience-timeline-content">
+                    <!-- job description with comany name, location, position, duration-->
+                    <div class="job-detail">
+                        <div class="duration-company">
+                            <!-- job time period and location -->
+                            <div class="duration-location">
+                                <p class="job-duration">
+                                    Sep 2010 - Aug 2013
+                                </p>
+                                <div class="icon-location">
+                                    <figure class="job-location-icon-container">
+                                        <img src="./public/location.svg" alt="location icon" class="job-location-icon-container__icon">
+                                    </figure>
+                                    <p class="job-location">
+                                        Berlin
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- compnay name, icon and position -->
+                            <div class="company">
+                                <figure class="company-icon-container">
+                                    <img src="./public/vectornator.svg" alt="" class="company__icon">
+                                </figure>
+                                <div class="job-title-company-name">
+                                    <p class="company__job-title">
+                                        Design system architect
+                                    </p>
+                                    <p class="company__name">
+                                       Vectornator 
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job description -->
+                        <p class="job-description">
+                            Non in fugiat aut consequatur deleniti. Consequuntur impedit modi asperiores impedit ut ea aut eligendi doloremque. Fugit laborum ducimus hic tempore velit. Sed vitae et corrupti omnis temporibus. Unde voluptas quaerat ea rerum aspernatur autem assumenda animi fugit. Omnis laborum velit voluptatum similique accusantium eveniet voluptatem.
+                        </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Education Section -->
+        <div class="education timeline-content">
+            <!-- Section header -->
+            <h3 class="timeline-content__header">
+                Education
+            </h3>
+
+            <!-- Education certification list -->
+            <div class="education-list">
+
+                <!-- Education Memorisely -->
+                <div class="right-card education-card">
+                    <div class="education-card-certification">
+                        <figure class="certification__icon-container">
+                            <img src="./public/memorisely.svg" alt="memorisely icon" class="certification_icon">
+                        </figure>
+                        <p class="certification__issuer">
+                            Memorisely
+                        </p>
+                    </div>
+                    <div class="certificate-title-time">
+                        <p class="certification__title">
+                            Build a design system
+                        </p>
+                        <p class="certification__time">
+                            Oct 2021
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education UX acadamy -->
+                <div class="right-card education-card">
+                    <div class="education-card-certification">
+                        <figure class="certification__icon-container">
+                            <img src="./public/ux-academy.svg" alt="ux acadamy icon" class="certification_icon">
+                        </figure>
+                        <p class="certification__issuer">
+                            UX acadamy
+                        </p>
+                    </div>
+                    <div class="certificate-title-time">
+                        <p class="certification__title">
+                            UX Design certificate
+                        </p>
+                        <p class="certification__time">
+                            Feb 2020
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Coursera -->
+                <div class="right-card education-card">
+                    <div class="education-card-certification">
+                        <figure class="certification__icon-container">
+                            <img src="./public/coursera.svg" alt="coursera icon" class="certification_icon">
+                        </figure>
+                        <p class="certification__issuer">
+                            Coursera
+                        </p>
+
+                    </div>
+                    <div class="certificate-title-time">
+                        <p class="certification__title">
+                            Usera reasearch course
+                        </p>
+                        <p class="certification__time">
+                            Dec 2019
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Skills section -->
+        <div class="skills timeline-content">
+            <!-- section header -->
+            <h3 class="timeline-content__header">
+                Skills
+            </h3>
+
+            <!-- Design skills -->
+            <div class="skills-list design">
+                <div class="skill">
+                    <div class="skill-icon-title">
+                        <figure class="skill__icon-container design-icon">
+                            <img src="./public/color.svg" alt="color palette icon" class="skill__icon">
+                        </figure>
+                        <p class="skill__title">
+                            Design
+                        </p>
+                    </div>
+                    
+                    <!-- Design skill list -->
+                    <div class="skill-list">
+                        <div class="skill-card shared-card">
+                            <p class="skill__name">Web <br> Design</p> 
+                            <hr class="skill-card__divider">
+                            <p class="skill__name">Mobile <br> Design</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill__name">
+                                User <br> Experience
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <ul class="skill__sub-list">
+                                <li class="skill__name">Wireframing</li>
+                                <li class="skill__name">Prototyping</li>
+                                <li class="skill__name">Testing</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill__name">
+                                Design <br> System
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Skills -->
+
+
+        </div>
+
+
 
     </div>
 </body>

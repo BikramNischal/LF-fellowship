@@ -1,7 +1,12 @@
 :root{
     --primary-gray: #47516B;
     --secondary-gray:#79819A;
+    --gradient-primary: #A478E8;
+    --gradient-secondary: #516CF7;
     --icon-container-background: #E2E6EE;
+    --background-secondary:#F7F9FC;
+    --project-title:#2E2E48;
+    --project-icon-background:#E1E7FE;
 }
 
 
@@ -19,8 +24,11 @@ body{
     width:100%;
 }
 
+.left-container{
+    background-color: var(--background-secondary);
+}
 
-/* Profile image */
+/* Profile image container */
 .profile-img{
     width:100%;
 }
@@ -29,11 +37,12 @@ body{
     width:100%;
 }
 
-/* Name, profession and quotation */
+/* Name, profession and quotation block */
 .name-quote{
     margin:20px 48px;
 }
-/* Name */
+
+/* profile name */
 .name__p{
     font-size: 2rem;
     font-weight: 500;
@@ -43,14 +52,14 @@ body{
     color: #2E2E48;
 }
 
-/* profession gradient */
+/* profile profession gradient */
 .name__p--gradient{
     font-size:1.5rem;
     font-family: "Outfit", sans-serif;
     font-weight: 500;
     line-height: 32px;
     text-align: center;
-    background: linear-gradient(to right, #A478E8,#516CF7);
+    background: linear-gradient(to right, var(--gradient-primary), var(--gradient-secondary));
     background-clip: text;
     color: transparent;
     text-align: center;
@@ -78,7 +87,7 @@ body{
     color:var(--secondary-gray);
 }
 
-/* contact block */
+/* contact, social, language outer block */
 .section{
     margin: 0 48px;
     border-top: 1px solid var(--secondary-gray);
@@ -99,7 +108,7 @@ body{
     gap:24px;
 }
 
-/* individual item in card like email, instagram, phone, etc. */
+/* individual item in left side card like email, instagram, phone, etc. */
 .left-card__item{
     min-width: 47%;
     flex: 1 1 0;
@@ -125,7 +134,8 @@ body{
     height: 20px;
 }
 
-/* primary style for text in left-card items */
+/* typography for left card */
+/* primary typography */
 .left-card__item--primary{
     font-family: "DM Sans", sans-serif;
     font-size:0.9rem;
@@ -135,7 +145,7 @@ body{
     color : var(--primary-gray);
 }
 
-/* secondary style for text in left-card items */
+/* secondary typography */
 .left-card__item--secondary{
     font-family: "DM Sans", sans-serif;
     font-size:0.75rem;
@@ -144,16 +154,397 @@ body{
     color:var(--secondary-gray);
 }
 
-/* social media icons */
+/* social media icons sizing  */
 .full-icon{
     width:100%;
     height:100%;
 }
 
-/* flag icon container */
+/* flag icon container sizing */
 .flag-container{
     width:32px;
     height:24px;
     border-radius: 0;
 }
 
+/* Timeline container */
+.timeline{
+    padding: 64px 48px 0px 32px;
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* timeline vertical line */
+.timeline::before{
+    content: "";
+    position:absolute;
+    margin-top: 64px;
+    width:2px;
+    background-color: var(--primary-gray);
+    top:0;
+    bottom:0;
+}
+
+/* timeline content alignment */
+.timeline-content{
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 48px;
+    width:100%;
+}
+
+/* timeline contain pin  */
+.timeline-content:before{
+   content:url("./public/timeline-icon.svg");
+   width:32px;
+   height:32px;
+   position: absolute;
+   top:-38px;
+   left:-48px;
+   z-index:1;
+}
+
+.timeline-content__header{
+    margin-bottom:24px;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.project-list{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* right handside card styling */
+.right-card{
+    display:flex;
+    flex-direction: column;
+    padding:24px;
+    gap:8px;
+    background-color: var(--background-secondary);
+    border-radius: 8px 0 0 8px;
+}
+
+/* wrapper for project icon and project content */
+.right-card-content-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+}
+
+/* project icon container */
+.right-card__img{
+    width:48px;
+    height:48px;
+}
+
+.right-card__img .projcet-icon{
+    width: 100%;
+    height: 100%;
+}
+
+/* typography for right card */
+/* primary typography */
+.right-card-content__title{
+    font-family: "DM Sans", sans-serif; 
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--project-title);
+}
+
+/* secondary typography */
+.right-card-content__detail{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: var(--secondary-gray);
+}
+
+/* project link styling */
+/* project link container */
+.right-card-link{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/* project link icon container */
+.right-card-link__icon-container{
+    width: 24px;
+    height:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--project-icon-background);
+    border-radius: 50%;
+}
+
+.right-card-link__icon{
+    height: 16px;
+    width: 16px;
+}
+
+/* project link typography */
+.right-card-link__project-link{
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: var(--gradient-secondary);
+    text-decoration: none;
+}
+
+/* experience timeline container */
+.experience-timeline{
+    padding: 32px 0px 0px 12px;
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* experience timeline vertical line */
+.experience-timeline::before{
+    content: "";
+    position:absolute;
+    margin-top: 8px;
+    width:1px;
+    background-color: var(--icon-container-background);
+    top:0;
+    bottom:0;
+}
+
+/* experience timeline content alignment */
+.experience-timeline-content{
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 48px;
+    width:100%;
+}
+
+/* experience timeline contain pin  */
+.experience-timeline-content::before{
+   content:url("./public/timeline-icon-2.svg");
+   width:32px;
+   height:32px;
+   position: absolute;
+   top:0px;
+   left:-7.5px;
+   z-index:1;
+}
+
+/* experience timeline content styling */
+
+.job-detail{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.duration-company{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    flex: 1 1 0;
+}
+
+/* job time duration and location */
+.duration-location{
+    display:flex;
+    flex-direction: row;
+    gap:4px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size:0.625rem;
+    color: var(--secondary-gray);
+}
+
+/* cotainer for location icon and location name  */
+.icon-location{
+    display:flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.job-location-icon-container{
+    width: 14px;
+    height: 14px;
+}
+
+.job-location-icon-container__icon{
+    width: 100%;
+    height: 100%;
+}
+
+/* container for complay icon, job title and company name */
+.company{
+    display:flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.company-icon-container{
+    width:40px;
+    height:40px;
+}
+
+.company__icon{
+    width: 100%;
+    height:100%;
+}
+
+/* job title typography */
+.company__job-title{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.75rem;
+    color: var(--secondary-gray);
+}
+
+/* company name typography */
+.company__name{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+/* job-description typography */
+.job-description{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7rem;
+    color: var(--secondary-gray);
+    flex: 1 1 0;
+}
+
+
+/* education section styling */
+.education-list{
+    display:flex;
+    gap:8px;
+    flex-direction: column;
+}
+
+.education-card{
+    flex: 1 1 0;
+}
+
+/* education card icon and provider name*/
+.education-card-certification{
+    display:flex;
+    flex-direction: row;
+    gap:16px;
+    align-items: center;
+}
+
+.certification__icon-container{
+    width: 48px;
+    height:48px;
+}
+
+.certification__icon{
+    width: 100%;
+    height: 100%;
+}
+
+/* certification provider typography */
+.certification__issuer{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--project-title);
+}
+
+/* certification title typography */
+.certification__title{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: var(--project-title);
+}
+
+/* certitification time typography */
+.certification__time{
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.65rem;
+    line-height: 0.8rem;
+    font-weight: 400;
+    color:var(--secondary-gray);
+}
+
+/* skills section styling */
+/* Outer skill list  */
+.skills-list{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.skill-icon-title{
+    padding: 16px 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.skill__icon-container{
+    width: 24px;
+    height: 24px;
+}
+
+.design-icon{
+    background-color:#EFE2F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.skill__title, .skill__name{
+    color:#9251F7;
+}
+
+/* inner skill list */
+.skill-list{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-card{
+    flex: 1 1 0;
+    display: flex;
+    background-color: var(--background-secondary);
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.skill__sub-list{
+    padding: 0 16px;
+}
+
+.shared-card{
+    display:flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.skill-card__divider{
+    border:1px solid var(--icon-container-background);
+    height:100%;
+}
