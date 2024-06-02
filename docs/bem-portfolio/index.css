@@ -432,7 +432,7 @@ body{
 .education-list{
     display:flex;
     gap:8px;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .education-card{
@@ -621,11 +621,18 @@ body{
     color:var(--secondary-gray);
 }
 
+/* table and ipad view  */
+@media only screen and (min-width: 600px){
+    /* job timeline to single entry alignment */
+    .job-detail{
+        flex-direction: row;
+    }
+}
 
-/*tablet and ipad views */
-
-@media only screen and (min-width: 700px) {
+/* Desktop view */
+@media only screen and (min-width: 900px) {
     
+    /* divide the left and right section in 3/7 ratio */
     body{
         flex-direction: row;
     }
@@ -638,4 +645,8 @@ body{
         width:70%;
     } 
 
+    /* project list horizontal alignment  */
+    .project-list{
+        flex-direction: row;
+    }
 }
