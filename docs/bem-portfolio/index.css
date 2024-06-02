@@ -22,18 +22,25 @@ html{
 
 body{
     width:100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-container{
     background-color: var(--background-secondary);
-}
-
-/* Profile image container */
-.profile-img{
     width:100%;
 }
 
-.profile-img__img{
+.right-container{
+    width:100%;
+}
+
+/* Profile image container */
+.profile-container{
+    width:100%;
+}
+
+.profile-container__img{
     width:100%;
 }
 
@@ -478,6 +485,13 @@ body{
 }
 
 /* skills section styling */
+
+/* skill list wrapper */
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 /* Outer skill list  */
 .skills-list{
     display:flex;
@@ -492,6 +506,7 @@ body{
 }
 
 .skill-icon-title{
+    min-width: 115px;
     padding: 16px 0;
     display: flex;
     flex-direction:column;
@@ -502,18 +517,18 @@ body{
 .skill__icon-container{
     width: 24px;
     height: 24px;
-}
-
-.design-icon{
-    background-color:#EFE2F9;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
-.skill__title, .skill__name{
-    color:#9251F7;
+.design-icon{
+    background-color:#EFE2F9;
+}
+
+.design{
+    color:var(--gradient-primary);
 }
 
 /* inner skill list */
@@ -547,4 +562,80 @@ body{
 .skill-card__divider{
     border:1px solid var(--icon-container-background);
     height:100%;
+}
+
+.shared-card--nested{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* font color for development skills */
+.development-icon{
+    background-color: var(--project-icon-background);
+}
+.development{
+    color: var(--gradient-secondary);
+}
+
+/* tools list styling  */
+.tools-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* right-card design overwrite for tools card  */
+.tools-list .right-card{
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-icon-container{
+    width: 48px;
+    height: 48px;
+}
+
+.tool__icon{
+    width:100%;
+    height: 100%;
+}
+
+/* tool name typography */
+.tool__name{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size:1rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+}
+
+/* tool description typography */
+.tool__detail{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size:0.75rem;
+    color:var(--secondary-gray);
+}
+
+
+/*tablet and ipad views */
+
+@media only screen and (min-width: 700px) {
+    
+    body{
+        flex-direction: row;
+    }
+
+    #left-container{
+        width: 30%;
+    }    
+
+    .right-container{
+        width:70%;
+    } 
+
 }

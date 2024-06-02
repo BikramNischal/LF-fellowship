@@ -15,10 +15,10 @@
 <body>
 
     <!-- left handside container (profile section) -->
-    <div class="left-container">
+    <div class="left-container" id="left-container">
         <!-- profile image -->
-        <figure class="profile-img">
-            <img class="profile-img__img" src="./public/profile-pic.svg" alt="profile picture">
+        <figure class="profile-container">
+            <img class="profile-container__img" src="./public/profile-pic.svg" alt="profile picture">
         </figure>
 
         <!-- Name,contact, social media, languages  -->
@@ -607,51 +607,246 @@
                 Skills
             </h3>
 
-            <!-- Design skills -->
-            <div class="skills-list design">
-                <div class="skill">
-                    <div class="skill-icon-title">
-                        <figure class="skill__icon-container design-icon">
-                            <img src="./public/color.svg" alt="color palette icon" class="skill__icon">
-                        </figure>
-                        <p class="skill__title">
-                            Design
-                        </p>
-                    </div>
-                    
-                    <!-- Design skill list -->
-                    <div class="skill-list">
-                        <div class="skill-card shared-card">
-                            <p class="skill__name">Web <br> Design</p> 
-                            <hr class="skill-card__divider">
-                            <p class="skill__name">Mobile <br> Design</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill__name">
-                                User <br> Experience
+            <!-- skill list wrapper -->
+            <div class="skills-container">
+                <!-- Design skills -->
+                <div class="skills-list design">
+                    <div class="skill">
+                        <div class="skill-icon-title">
+                            <figure class="skill__icon-container design-icon">
+                                <img src="./public/color.svg" alt="color palette icon" class="skill__icon">
+                            </figure>
+                            <p class="skill__title">
+                                Design
                             </p>
                         </div>
-                        <div class="skill-card">
-                            <ul class="skill__sub-list">
-                                <li class="skill__name">Wireframing</li>
-                                <li class="skill__name">Prototyping</li>
-                                <li class="skill__name">Testing</li>
-                            </ul>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill__name">
-                                Design <br> System
-                            </p>
+                        
+                        <!-- Design skill list -->
+                        <div class="skill-list">
+                            <div class="skill-card shared-card">
+                                <p class="skill__name">Web <br> Design</p> 
+                                <hr class="skill-card__divider">
+                                <p class="skill__name">Mobile <br> Design</p>
+                            </div>
+                            <div class="skill-card">
+                                <p class="skill__name">
+                                    User <br> Experience
+                                </p>
+                            </div>
+                            <div class="skill-card">
+                                <ul class="skill__sub-list">
+                                    <li class="skill__name">Wireframing</li>
+                                    <li class="skill__name">Prototyping</li>
+                                    <li class="skill__name">Testing</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <p class="skill__name">
+                                    Design <br> System
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Development Skills -->
+                <!-- Development Skills -->
+                <div class="skills-list development">
+                    <div class="skill">
+                        <div class="skill-icon-title">
+                            <figure class="skill__icon-container development-icon">
+                                <img src="./public/code.svg" alt="angular bracket icon" class="skill__icon">
+                            </figure>
+                            <p class="skill__title">
+                                Devleopment
+                            </p>
+                        </div>
 
-
+                        <!-- Development skill list -->
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <p class="skill__name">
+                                    React JS
+                                </p>
+                            </div>
+                            <div class="skill-card">
+                                <ul class="skill__sub-list">
+                                    <li class="skill__name">Chakra UI</li>
+                                    <li class="skill__name">Emotion</li>
+                                    <li class="skill__name">Framer</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card shared-card">
+                                <p class="skill__name">Type <br> script</p>
+                                <hr class="skill-card__divider">
+                                <p class="skill__name">Next <br> JS</p>
+                            </div>
+                            <div class="skill-card shared-card">
+                                <p class="skill__name">
+                                    HTML
+                                </p>
+                                <hr class="skill-card__divider">
+                                <div class="shared-card shared-card--nested">
+                                    <p class="skill__name">CSS</p>
+                                    <hr class="skill-card__divider">
+                                    <p class="skill__name">JS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
 
+        <!-- Tools section -->
+        <div class="tools timeline-content">
+            <!-- section header -->
+            <h3 class="timeline-content__header">
+                Tools
+            </h3>
+
+            <!-- tools list -->
+            <div class="tools-list">
+
+                <!-- Figma Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/figma-logo.svg" alt=" figma logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Figma
+                        </p>
+                        <p class="tool__detail">
+                            UI Design, prototyping
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Maze Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/maze.svg" alt=" Maze logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Maze
+                        </p>
+                        <p class="tool__detail">
+                            Product research
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Spline Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/spline.svg" alt=" Spline logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Spline
+                        </p>
+                        <p class="tool__detail">
+                            3D design
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zeplin Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/zeplin.svg" alt=" Zeplin logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Zeplin
+                        </p>
+                        <p class="tool__detail">
+                            Design Workspace
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vectornator Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/vectornator-tool.svg" alt=" Vectornator logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Vectornator
+                        </p>
+                        <p class="tool__detail">
+                            Graphic Design
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Rotato Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/rotato.svg" alt=" Rotato logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Rotato
+                        </p>
+                        <p class="tool__detail">
+                            Mockups
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vs Code Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/vscode.svg" alt="Vs Code logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                           VS Code 
+                        </p>
+                        <p class="tool__detail">
+                            Code editor
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Xcode Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/xcode.svg" alt=" Xcode logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Xcode
+                        </p>
+                        <p class="tool__detail">
+                            IOS development
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Notion Tool -->
+                <div class="right-card">
+                    <figure class="tool-icon-container">
+                        <img src="./public/notion.svg" alt=" Notion logo" class="tool__icon">
+                    </figure>
+                    <div class="tool-details">
+                        <p class="tool__name">
+                            Notion
+                        </p>
+                        <p class="tool__detail">
+                            Project managment
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
 
 
     </div>
